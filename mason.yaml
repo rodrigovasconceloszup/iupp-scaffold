@@ -1,0 +1,5 @@
+bricks:
+  micro_app:
+    path: bricks/micro_app
+  macro_app:
+    path: bricks/macro_app

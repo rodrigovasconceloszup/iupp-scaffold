@@ -1,0 +1,68 @@
+name: iupp_{{microAppNameLowerCase}}
+description: iupp {{microAppName}} microapp.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  iupp_core:
+    git:
+      url: git@github.com:ZupIT/iupp-core.git
+      ref: main
+      tag: v1.0.0
+  
+  iupp_components:
+    git:
+      url: git@github.com:ZupIT/iupp-components.git
+      ref: main
+      tag: v1.0.0
+
+dependency_overrides:
+  iupp_core:
+    path: ../iupp-core
+
+  iupp_components:
+    path: ../iupp-components
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+  # Test
+  faker: ^2.0.0-rc.2
+  mocktail: ^0.1.2
+  mocktail_image_network: ^0.1.0
+
+  # Util
+  import_sorter: ^4.6.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: IuppIcons
+      fonts:
+        - asset: packages/iupp_components/fonts/IuppIcons.ttf
+        - asset: packages/iupp_components/fonts/IuppIcons.woff
+    - family: ItauDisplay
+      fonts:
+        - asset: packages/iupp_components/fonts/ItauDisplay_Bd.ttf
+        - asset: packages/iupp_components/fonts/ItauDisplay_Blk.ttf
+        - asset: packages/iupp_components/fonts/ItauDisplay_He.ttf
+        - asset: packages/iupp_components/fonts/ItauDisplay_Lt.ttf
+        - asset: packages/iupp_components/fonts/ItauDisplay_Rg.ttf
+        - asset: packages/iupp_components/fonts/ItauDisplay_XBd.ttf
+
+import_sorter:
+  emojis: false
+  comments: false

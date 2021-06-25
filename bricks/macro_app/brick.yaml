@@ -1,0 +1,5 @@
+name: macro_app
+description: Scaffold of a minimal macro app example
+vars:
+  - macroAppName
+  - macroAppNameLowerCase
