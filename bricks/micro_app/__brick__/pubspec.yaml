@@ -1,4 +1,4 @@
-name: iupp_{{microAppNameLowerCase}}
+name: iupp_{{microAppNameSnakeCase}}
 description: iupp {{microAppName}} microapp.
 publish_to: 'none'
 version: 1.0.0+1

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iupp_core/core.dart';
 import 'package:iupp_components/iupp_components.dart';
 
-class {{macroAppName}}App extends MainApp {
-  {{macroAppName}}App() {
+class {{macroAppNamePascalCase}}App extends MainApp {
+  {{macroAppNamePascalCase}}App() {
     super.registerRoutes();
     super.registerDependencies();
   }
@@ -13,7 +13,7 @@ class {{macroAppName}}App extends MainApp {
     return IuppLoaderOverlay(
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'iupp App',
+        title: '{{macroAppNamePascalCase}}',
         theme: iuppTheme,
         navigatorKey: NavigatorService.navigatorKey,
         onGenerateRoute: super.generateRoute,

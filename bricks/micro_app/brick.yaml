@@ -1,5 +1,5 @@
 name: micro_app
 description: Scaffold of a minimal micro app example
 vars:
-  - microAppName
-  - microAppNameLowerCase
+  - microAppNamePascalCase
+  - microAppNameSnakeCase

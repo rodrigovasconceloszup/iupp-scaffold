@@ -1,9 +1,9 @@
 import 'package:iupp_components/iupp_components.dart';
 import 'package:iupp_core/core.dart';
 
-class {{microAppName}}App extends MicroApp {
+class {{microAppNamePascalCase}}App extends MicroApp {
   @override
-  String get microAppName => '{{microAppName}}';
+  String get microAppName => '{{microAppNamePascalCase}}';
 
   @override
   String get contextPath => '';
